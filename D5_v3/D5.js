@@ -96,12 +96,11 @@ const Audi = cars.push({ brand: "Audi", model: "A2", color: "silver", trims: ["t
 
 console.log(cars);
 
-/* for (let i = 0; i < cars.length; i++) {
-  let lastIndex = cars[i].trims.lastIndexOf;
-  let popLast = lastIndex.pop[i];
+for (let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop();
 }
 
-console.log(cars); */
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
@@ -110,6 +109,14 @@ console.log(cars); */
 console.log("----esercizio 7----");
 
 const justTrims = [];
+
+for (let i = 0; i < cars.length; i++) {
+  let firstElement = cars[i].trims[0];
+  console.log(firstElement);
+  justTrims.push(firstElement);
+}
+
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
