@@ -92,6 +92,17 @@ console.log(cars);
 
 console.log("----esercizio 6----");
 
+const Audi = cars.push({ brand: "Audi", model: "A2", color: "silver", trims: ["titanium", "s", "ac"] });
+
+console.log(cars);
+
+/* for (let i = 0; i < cars.length; i++) {
+  let lastIndex = cars[i].trims.lastIndexOf;
+  let popLast = lastIndex.pop[i];
+}
+
+console.log(cars); */
+
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
@@ -126,6 +137,14 @@ console.log(cars);
 console.log("----esercizio 9----");
 
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
+
+while (((i = 0), i < numericArray)) {
+  numericArray++;
+
+  console.log(numericArray);
+}
+
+console.log(numericArray);
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno

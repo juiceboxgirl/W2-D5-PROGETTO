@@ -15,10 +15,11 @@ img {
 
 ul {
   background-color: #364757;
+  font-size: small;
+  font-weight: 400;
   list-style-type: none;
   margin: 0;
   padding: 1%;
-  position: absolute;
 }
 
 li {
@@ -28,4 +29,20 @@ li {
 a:link {
   color: white;
   text-decoration: none;
+}
+
+section {
+  margin: 20px;
+}
+
+p.shop {
+  background-color: #f56600;
+  color: white;
+  font-size: small;
+  text-align: center;
+  padding: 1%;
+}
+
+section.guide {
+  background-repeat: repeat-x;
 }
