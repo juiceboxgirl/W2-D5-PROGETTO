@@ -1,0 +1,31 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: #222f3f;
+  padding-left: 3%;
+}
+
+img {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+ul {
+  background-color: #364757;
+  list-style-type: none;
+  margin: 0;
+  padding: 1%;
+  position: absolute;
+}
+
+li {
+  display: inline-block;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
