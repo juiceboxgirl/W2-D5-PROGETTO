@@ -145,13 +145,12 @@ console.log("----esercizio 9----");
 
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
 
-while (((i = 0), i < numericArray)) {
-  numericArray++;
+let i = 0;
 
-  console.log(numericArray);
+while (i < numericArray.length && numericArray[i] <= 32) {
+  console.log(numericArray[i]);
+  i++;
 }
-
-console.log(numericArray);
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -161,4 +160,93 @@ console.log(numericArray);
 
 console.log("----esercizio 10----");
 
-const charactersArray = ["g", "n", "u", "z", "d"];
+const italianAlphabet = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "Z",
+];
+
+const letterArray = [];
+
+for (let i = 0; i < numericArray.length; i++) {
+  const number = numericArray[i];
+
+  switch (number) {
+    case 2:
+      letterArray.push(italianAlphabet[0]);
+      break;
+    case 6:
+      letterArray.push(italianAlphabet[1]);
+      break;
+    case 8:
+      letterArray.push(italianAlphabet[2]);
+      break;
+    case 23:
+      letterArray.push(italianAlphabet[3]);
+      break;
+    case 31:
+      letterArray.push(italianAlphabet[4]);
+      break;
+    case 32:
+      letterArray.push(italianAlphabet[5]);
+      break;
+    case 35:
+      letterArray.push(italianAlphabet[6]);
+      break;
+    case 45:
+      letterArray.push(italianAlphabet[7]);
+      break;
+    case 66:
+      letterArray.push(italianAlphabet[8]);
+      break;
+    case 74:
+      letterArray.push(italianAlphabet[9]);
+      break;
+    case 75:
+      letterArray.push(italianAlphabet[10]);
+      break;
+    case 84:
+      letterArray.push(italianAlphabet[11]);
+      break;
+    case 90:
+      letterArray.push(italianAlphabet[12]);
+      break;
+    case 98:
+      letterArray.push(italianAlphabet[13]);
+      break;
+    case 100:
+      letterArray.push(italianAlphabet[14]);
+      break;
+    case 105:
+      letterArray.push(italianAlphabet[15]);
+      break;
+    case 313:
+      letterArray.push(italianAlphabet[16]);
+      break;
+    case 321:
+      letterArray.push(italianAlphabet[17]);
+      break;
+    default:
+      break;
+  }
+}
+
+console.log(letterArray);
